@@ -1,0 +1,19 @@
+{
+  "name": "letta-filesystem-migration-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "v1": "tsx v1_example.ts",
+    "v2": "tsx v2_example.ts"
+  },
+  "dependencies": {
+    "@letta-ai/letta-agent-sdk": "0.2.6",
+    "@letta-ai/letta-client": "1.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0"
+  }
+}

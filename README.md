@@ -4,6 +4,7 @@ Side-by-side examples for migrating from deprecated Letta API and SDK surfaces t
 
 ## Guides
 
+- [Async messages to Agent SDK sessions](./async-messages/README.md)
 - [Filesystem folders to repositories](./filesystem/README.md)
 
 Each guide keeps the v1 and v2 implementations close together and uses the same input and question so behavior can be compared directly.

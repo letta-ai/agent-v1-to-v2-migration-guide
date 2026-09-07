@@ -5,5 +5,6 @@ Side-by-side examples for migrating from deprecated Letta API and SDK surfaces t
 ## Guides
 
 - [Filesystem folders to repositories](./filesystem/README.md)
+- [Python server PostgreSQL agents to the local App Server](./.agents/skills/migrating-v1-postgres-agents/SKILL.md)
 
-Each guide keeps the v1 and v2 implementations close together and uses the same input and question so behavior can be compared directly.
+API guides keep the v1 and v2 implementations close together so behavior can be compared directly. State migrations include a runnable skill and validation scripts.

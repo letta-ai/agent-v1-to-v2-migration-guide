@@ -1,0 +1,27 @@
+name: Cloud agent backup
+
+on:
+  pull_request:
+    paths:
+      - '.agents/skills/backing-up-cloud-agents/**'
+      - '.github/workflows/cloud-agent-backup.yml'
+  push:
+    branches: [main]
+    paths:
+      - '.agents/skills/backing-up-cloud-agents/**'
+      - '.github/workflows/cloud-agent-backup.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: '1.3.14'
+      - run: bun test ./.agents/skills/backing-up-cloud-agents/scripts/backup.test.ts
+      - run: bun .agents/skills/backing-up-cloud-agents/scripts/cloud-agent.ts --help

@@ -4,6 +4,7 @@ Side-by-side examples for migrating from deprecated Letta API and SDK surfaces t
 
 ## Guides
 
+- [Async messages to Agent SDK sessions](./async-messages/README.md)
 - [Filesystem folders to repositories](./filesystem/README.md)
 - [Python server PostgreSQL agents to the local App Server](./.agents/skills/migrating-v1-postgres-agents/SKILL.md)
 - [Cloud agent backup and fresh-agent restore](./.agents/skills/backing-up-cloud-agents/SKILL.md) (settings and Git memory restored; saved messages kept for reference)
